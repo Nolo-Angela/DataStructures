@@ -207,3 +207,23 @@ def text_to_morse(text):
     }
     
     return " ".join([morse_code_dict[i.upper()]  for i in  text]) 
+
+def main():
+    
+    print("Random List:", generate_random_list(5))
+    print("Max:", find_max([1, 2, 3, 4]))
+    print("Min:", find_min([1, 2, 3, 4]))
+    print("Average:", find_average([1, 2, 3, 4]))
+    print("Even Count:", find_number_of_even_numbers([1, 2, 3, 4]))
+    print("Odd Count:", find_number_of_odd_numbers([1, 2, 3, 4]))
+    print("Even Numbers:", find_even_numbers([1, 2, 3, 4]))
+    print("Odd Numbers:", find_odd_numbers([1, 2, 3, 4]))
+    print("List Stats:", return_list_stats([1, 2, 3, 4]))
+    print("Processed Characters:", process_characters(['1', '2', 'a', 'b,]))
+    print("Squared Dict:", generate_squared_dict(5))
+    print("Word List:", convert_to_word_list("Hello"))
+    print("Letters Count Map:", letters_count_map("Hello"))
+    print("Text to Morse:", text_to_morse("Hello!? 123"))
+
+if __name__ == '__main__':
+    main()

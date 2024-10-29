@@ -335,6 +335,11 @@ class MyTestCase(unittest.TestCase):
 
         self.assertEqual(len(result), n)
 
+    def test_45_random_list(self): #check output type
+        result = generate_random_list(5)
+
+        self.assertEqual(type(result), list)
+        
     
 if __name__ == '__main__':
     main()
